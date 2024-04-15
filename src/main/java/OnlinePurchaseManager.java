@@ -29,7 +29,7 @@ if(purchases.get(i).isElectronic()&&purchases.get(i).getMaker().equals(maker))
   public boolean hasAdjacentEqualPair()
   {
     for (int i = 0; i<purchases.size()-1;i++){
-if(purchases.get(i).getMaker().equals(purchases.get(i).getMaker()))
+if(purchases.get(i).getMaker().equals(purchases.get(i+1).getMaker()))
  return true;
 }
 return false;
