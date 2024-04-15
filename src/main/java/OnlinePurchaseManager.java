@@ -28,7 +28,11 @@ if(puchases.get(i).isElectronic()&&purchases.get(i).getmaker().equals(maker))
   */
   public boolean hasAdjacentEqualPair()
   {
-    /* to be implemented in part (b) */
+    for (int i = 0: i<purchases.size()-1;i++){
+if(purchases.get(i).getmaker().equals(purchases.get(i).getmaker()))
+ return true;
+}
+return false;
   }
   public OnlinePurchaseManager()
   {
